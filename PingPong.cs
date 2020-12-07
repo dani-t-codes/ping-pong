@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 class PingPong
 {
@@ -8,12 +9,24 @@ class PingPong
     string yourStringNumber = Console.ReadLine();
     int yourNumberToInt = int.Parse(yourStringNumber);
 
-  // use a list vs array 
-  // foreach (# % 3)
+    List<int> numbersList = new List<int> {};
 
-  // foreach (# % 5)
+    for (int i = 0; i <= yourNumberToInt; i++)
+    {
+      numbersList.Add(i);
+    }
+    
+    Console.WriteLine(numbersList[3]);
 
-  // foreach (# % 3 && 5)
+  // use a list or array 
+  // if (yourNumberToInt % 3)
+  // foreach (3 --> ping)
+
+  // if (yourNumberToInt % 5)
+  // foreach (5 --> pong)
+
+  // if (yourNumberToInt % 3 && 5)
+  // foreach 
   }
 
 }
