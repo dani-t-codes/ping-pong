@@ -13,22 +13,20 @@ class PingPong
 
     for (int i = 0; i <= yourNumberToInt; i++)
     {
-      numbersList.Add(i);
+      if (i == 0) {
+        numbersList.Add(i.ToString());
+      } else if (i % 3 == 0 && i % 5 == 0) {
+        numbersList.Add("ping-pong");
+      } else if (i % 5 == 0) {
+        numbersList.Add("pong");
+      } else if (i % 3 == 0) {
+        numbersList.Add("ping");
+      } else {
+        numbersList.Add(i.ToString());
+      }
+
+      Console.WriteLine(numbersList[i]);
     }
-
-    // convert i back to string when adding to list
-    // make sure to use "== 0" in if statements
-    // add i only if isn't % 3, % 5, or % 3 & 5
-
-
-  // if (yourNumberToInt % 3)
-  // foreach (3 --> "ping")
-
-  // if (yourNumberToInt % 5)
-  // foreach (5 --> "pong")
-
-  // if (yourNumberToInt % 3 && 5)
-  // foreach (3 && 5 --> "ping-pong")
   }
-
+  
 }
