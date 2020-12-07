@@ -33,10 +33,9 @@ If the user enters 15, the program will return:
 
 ## Technologies used
 
-- C#
-- .NET Core
+- C# v 7.3
+- .NET Core v 2.2
 - dotnet script, REPL
-- MySQL
 
 ## Installation Requirements
 
@@ -63,9 +62,11 @@ If the user enters 15, the program will return:
 
 * Install C# and .Net. 
 * Install dotnet script
-* Install & configure MySQL 
 
-* Once the project has been cloned to your computer and you have all the necessary items on your local computer, open the project in the application of your choice ((Visual Code Studio)[https://code.visualstudio.com/] was used and is recommended by the application builder), and run `npm install` to get the appropriate dependencies from Node.js in the project.
+* Once the project has been cloned to your computer and you have all the necessary items on your local computer, open the project in the application of your choice ((Visual Code Studio)[https://code.visualstudio.com/] was used and is recommended by the application builder), and run ...
+
+* `dotnet build` will get bin/ and obj/ folders downloaded
+* `dotnet run` will run the program. 
 
 
 ### Specs
